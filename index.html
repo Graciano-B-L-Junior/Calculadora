@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device.width,device-scale=1.0,maximum-scale=1.0">
+    </head>
+    <body>
+        <div class="calculadora">
+            <div class="UI">
+                <div class="display">
+                    <div id="display-values"></div><!--display-values-->
+                    <div id="display-values-memory"></div>
+                </div><!--display-->
+                <div class="UI-buttons">
+                        <div class="row-1">
+                            <button value="CE" onclick="clearAll()">CE</button>
+                            <button value="C" onclick="clearValue()">C</button>
+                            <button value="Del" onclick="Deleta()">Del</button>
+                            <button value="/" onclick="dividir()">/</button>
+                        </div><!--row-1-->
+                            <div class="row-2">
+                                <button value="7" onclick="displayValue(this)">7</button>
+                                <button value="8" onclick="displayValue(this)">8</button>
+                                <button value="9" onclick="displayValue(this)">9</button>
+                                <button value="*" onclick="multiplicar()">*</button>
+                            </div><!--row-2-->
+                            <div class="row-3">
+                                <button value="4" onclick="displayValue(this)">4</button>
+                                <button value="5" onclick="displayValue(this)">5</button>
+                                <button value="6" onclick="displayValue(this)">6</button>
+                                <button value="+" onclick="somar()">+</button>
+                            </div><!--row-3-->
+                            <div class="row-4">
+                                <button value="1" onclick="displayValue(this)">1</button>
+                                <button value="2" onclick="displayValue(this)">2</button>
+                                <button value="3" onclick="displayValue(this)">3</button>
+                                <button value="-" onclick="subtrair()">-</button>
+                            </div><!--row-4-->
+                            <div class="row-5">
+                                <button disabled>.</button>
+                                <button value="0" onclick="displayValue(this)">0</button>
+                                <button disabled>.</button>
+                                <button value="="onclick="operacaoFinal()">=</button>
+                            </div><!--row-5-->
+                </div><!--UI-buttons-->
+            </div><!--UI-->
+        </div><!--calculadora-->
+        <script src="calculadora.js"></script>
+    </body>
+</html>
